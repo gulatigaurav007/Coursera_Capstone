@@ -1,0 +1,16 @@
+Projects – The Battle of Neighborhoods (Week 1) Assignment:
+
+Data Section:
+The city of San Francisco has maintained a large data repository hosted on the website DataSF. From there, we can access the city’s crime rate, housing price, and public parking information. Sounds good! So let’s proceed and see what insight can be extracted from the data. We will be working with two datasets: Police Department Incident Reports: 2018 to Present and San Francisco Historical Secured Property Tax Rolls 2007–2015. 
+
+Based on definition of our problem, factors that will influence our decission are:
+* number of existing restaurants in the neighborhood (any type of restaurant)
+* number of and distance to restaurants in the neighborhood, if any
+* distance of neighborhood from city center
+
+We decided to use regularly spaced grid of locations, centered around city center, to define our neighborhoods.
+
+Following data sources will be needed to extract/generate the required information:
+* centers of candidate areas will be generated algorithmically and approximate addresses of centers of those areas will be obtained using **Google Maps API reverse geocoding**
+* number of restaurants and their type and location in every neighborhood will be obtained using **Foursquare API**
+* coordinate of San Francisco center will be obtained using **Google Maps API geocoding** of well known San Francisco location
